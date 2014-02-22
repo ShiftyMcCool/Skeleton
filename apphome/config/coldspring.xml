@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<bean id="SampleDAO" class="apphome.model.SampleDAO">
+
+	</bean>
+	<bean id="SampleGateway" class="apphome.model.SampleGateway">
+
+	</bean>
+	<bean id="SampleService" class="apphome.model.SampleService">
+		<constructor-arg name="SampleDAO">
+			<ref bean="SampleDAO"/>
+		</constructor-arg>
+		<constructor-arg name="SampleGateway">
+			<ref bean="SampleGateway"/>
+		</constructor-arg>
+	</bean>
+</beans>

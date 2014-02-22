@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mach-ii PUBLIC "-//Mach-II//DTD Mach-II Configuration 1.9.0//EN"
+	"http://www.mach-ii.com/dtds/mach-ii_1_9_0.dtd" >
+
+<mach-ii version="1.9">
+
+	<!-- ---------------------------------------------------------------------------------------------------------- 
+		If the mach-ii.xml file gets too large, break up the file into the sections below and use this xml file 
+	----------------------------------------------------------------------------------------------------------- -->
+
+	<!-- INCLUDES -->
+	<includes>
+		<!-- PROPERTIES -->
+		<include file="./_main.properties.xml" />		
+		<!-- PER-ENVIRONMENT CONFIG -->
+		<include file="./_main.environment.properties.xml" />
+		<!-- COLDSPRING -->
+		<include file="./_main.coldspring.property.xml" />		
+		<!-- MODULES -->
+		<include file="./_main.modules.xml" />
+		<!-- LISTENERS -->
+		<include file="./_main.listeners.xml" />
+		<!-- EVENT-FILTERS -->
+		<include file="./_main.event-filters.xml" />
+		<!-- PLUGINS -->
+		<include file="./_main.plugins.xml" />
+		<!-- EVENT-HANDLERS -->
+		<include file="./_main.event-handlers.xml" />
+		<!-- SUBROUTINES -->
+		<include file="./_main.subroutines.xml" />
+		<!-- PAGE-VIEWS -->
+		<include file="./_main.page-views.xml" />
+	</includes>
+	
+</mach-ii>
